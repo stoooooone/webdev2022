@@ -123,7 +123,7 @@ int main(void) {
 }
 */
 
-//선택 정렬
+//정렬
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -133,7 +133,8 @@ int main(void) {
 int list[MAX_SIZE];
 int n;
 
-void selection_sort(int list[], int n) {
+//선택 정렬
+void selection_sort(int list[], int n) {	
 	int i, j, least, temp;
 	for (i = 0; i < n - 1; i++) {
 		least = i;
@@ -142,6 +143,18 @@ void selection_sort(int list[], int n) {
 				SWAP(list[j], list[least], temp);
 			}
 		}
+	}
+}
+
+//삽입 정렬
+void insertion_sort(int list[], int n) {
+	int i, j, key;
+	for (i = 1; i < n; i++) {
+		key = list[i];
+		for (j = i - 1; j >= 0 && list[j] > key; j--) {
+			list[j + 1] = list[j];
+		}
+		list[j + 1] = key;
 	}
 }
 
@@ -158,7 +171,7 @@ int main(void) {
 	}
 	printf("\n");
 
-	selection_sort(list, n);
+	insertion_sort(list, n);
 	for (i = 0; i < n; i++) {
 		printf("%d ", list[i]);
 	}
