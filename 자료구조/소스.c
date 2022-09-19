@@ -158,6 +158,17 @@ void insertion_sort(int list[], int n) {
 	}
 }
 
+//버블 정렬
+void bubble_sort(int list[], int n) {
+	int i, j, temp;
+	for (i = n - 1; i > 0; i--) {
+		for (j = 0; j < i; j++) {
+			if (list[j] > list[j + 1])
+				SWAP(list[j], list[j + 1], temp);
+		}
+	}
+}
+
 int main(void) {
 	int i;
 	n = MAX_SIZE;
@@ -171,7 +182,7 @@ int main(void) {
 	}
 	printf("\n");
 
-	insertion_sort(list, n);
+	bubble_sort(list, n);
 	for (i = 0; i < n; i++) {
 		printf("%d ", list[i]);
 	}
