@@ -16,6 +16,18 @@ class Sort {
 		}
 		System.out.println();
 	}
+	
+	public void selectionSort(int a[], int size) {
+		for (int last=(size-1); last>=1; last--) {
+			for (int i=(last-1); i>=0; i--) {
+				if (a[last]<a[i]) {
+					int temp=a[i];
+					a[i]=a[last];
+					a[last]=temp;
+				}
+			}
+		}
+	}
 }
 
 public class SortEx {
@@ -29,6 +41,9 @@ public class SortEx {
 		for (int i=0; i<size; i++)
 			System.out.printf(" %d", a[i]);
 		System.out.println();
-		S.insertionSort(a, size);
+		S.selectionSort(a, size);
+		System.out.printf("\n정렬한 원소 : ");
+		for (int i=0; i<size; i++)
+			System.out.printf(" %d", a[i]);
 	}
 }
