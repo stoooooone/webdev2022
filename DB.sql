@@ -96,8 +96,13 @@ select customer.name
 from customer
 where custid in (select custid from orders);
 
+select customer.name
+from customer
+where custid in (select custid from orders where bookid in (select bookid from book where publisher='대한미디어'));
 
-
+select b1.bookname
+from book b1
+where b1.price > (select avg(b2.price) from book b2 where b2.publisher=b1.publisher);
 
 
 
