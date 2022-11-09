@@ -22,7 +22,7 @@ body {
 }
 
 #wrapper {
-    width: 85%;
+    mid-width: 1190px;
 
 }
 
@@ -54,12 +54,54 @@ header {
 
 header nav {
     height: 46px;
+    width: 90%;
 }
 
 a {
+    color: #19ce60;
     text-decoration: none;
-    color: #222;
-    display: block;
-    height: 46px;
-    line-height: 46px;
+    /*display: inline;*/
+    /*height: 46px;*/
+    /*line-height: 46px;*/
+}
+
+.mainNav {
+    position: relative;
+    /*display: block;*/
+    font-weight: bold;
+}
+.nav_item {
+    color: var(--naver);
+}
+.other {
+    color: #202020;
+    font-size: 0.9em;
+}
+
+ul li {
+    display: inline-block;
+}
+ul {
+    display: inline-block;
+}
+
+footer {
+    border-top: #e5e5e5 1px solid;
+    float: bottom;
+    text-align: center;
+    height: 50px;
+}
+main {
+    width: 75%;
+    height: 500px;
+    float: left;
+}
+aside {
+    width: 15%;
+    height: 500px;
+    float: left;
+}
+#login {
+    border: 1px solid #dae1e6;
+    background: #f7f9fa;
 }
