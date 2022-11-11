@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary : #DDFFBC;
+    --secondary : #91C788;
+    --important : #52734D;
+    --normal : #FEFFDE;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+nav li {
+    margin-right: 5px;
+    float: left;
+    width: 80px;
+    height: 30px;
+}
+
+.center {
+    width:100%;
+    border: 4px solid var(--primary);
+}
+
+header, footer {
+    height: 50px;
+    text-align: center;
+    background: var(--important);
+}
+
+main {
+    width: 70%;
+    height: 500px;
+    background: var(--primary);
+}
+
+aside {
+    width: 10%;
+    height: 500px;
+    background: var(--secondary);
+}
