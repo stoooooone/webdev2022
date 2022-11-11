@@ -22,7 +22,8 @@ body {
 }
 
 #wrapper {
-    mid-width: 1190px;
+    mid-width: 1000px;
+    align-content: center;
 
 }
 
@@ -31,17 +32,25 @@ body {
     font-size: 50px;
     width: 222px;
     height: 52px;
-
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 #search {
     border-color: var(--naver) solid 2px;
     height: 52px;
     width: 500px;
+    padding-left: 10px;
+    /*margin: 10px 50px;*/
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 #searchtext {
     height: 52px;
     width: 500px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 header {
@@ -49,6 +58,8 @@ header {
     height: 120px;
     #background: #19ce60;
     border-bottom: 1px solid #e5e5e5;
+    margin: 10px 50px 10px 50px;
+    padding: 10px 10px 50px 10px;
 }
 
 
@@ -104,4 +115,5 @@ aside {
 #login {
     border: 1px solid #dae1e6;
     background: #f7f9fa;
+    alignment: center;
 }
