@@ -20,16 +20,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    perspective: 300px;     /*관찰자 시점 거리*/
+    perspective: 550px;     /*관찰자 시점 거리*/
     color: white;
     line-height: 50px;
 }
 
 .cube {
-    position: relative;
-    width: 200px;
-    height: 200px;
+    /*position: relative;*/
+    width: 300px;
+    height: 300px;
     transform-style: preserve-3d;
+    animation: rotate 10s infinite;
 }
 
 .cube div {
@@ -38,46 +39,59 @@ body {
     position: absolute;
     color: white;
     font-weight: bold;
+    background-color: burlywood;
+    text-align-all: center;
+    align-items: center;
 }
-/*200 100 400*/
+
+@keyframes rotate {
+    100% {
+        transform: rotateY(360deg) rotateX(360deg);
+    }
+}
+
+/*200 100 400   200 200 200으로 먼저 해보기*/
 .cube .front {
     width: 200px;
-    height: 100px;
+    height: 200px;
     /*translate: 100px;*/
     background-color: var(--color1);
-    transform: translateZ(200px);
+    transform: translateZ(100px);
 }
 
 .cube .back {
     background-color: var(--color2);
     width: 200px;
-    height: 100px;
-    transform: rotateY(180deg) translateZ(200px);
+    height: 200px;
+    transform: rotateY(180deg) translateZ(100px);
 }
 
 .cube .right {
     background-color: var(--color3);
-    width: 400px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    transform: rotateY(90deg) translateZ(100px);
 }
 
 .cube .left {
     background-color: var(--color4);
-    width: 400px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    transform: rotateY(270deg) translateZ(100px);
 }
 
 .cube .top {
     background-color: var(--color5);
     width: 200px;
-    height: 400px;
+    height: 200px;
+    transform: rotateX(90deg) translateZ(100px);
 }
 
 .cube .bottom {
     background-color: var(--color6);
     width: 200px;
-    height: 400px;
-    transform: rotateX(-90deg) translateZ(50px);
+    height: 200px;
+    transform: rotateX(-90deg) translateZ(100px);
 }
 
 
