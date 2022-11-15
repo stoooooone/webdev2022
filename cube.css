@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --color1: #CCCCFF55;
+    --color2: #6495ED55;
+    --color3: #40E0D055;
+    --color4: #9FE2BF55;
+    --color5: #DE316355;
+    --color6: #FF7F5055;
+    --color7: #FFBF0055;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 300px;     /*관찰자 시점 거리*/
+    color: white;
+    line-height: 50px;
+}
+
+.cube {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+}
+
+.cube div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+}
+/*200 100 400*/
+.cube .front {
+    width: 200px;
+    height: 100px;
+    /*translate: 100px;*/
+    background-color: var(--color1);
+    transform: translateZ(200px);
+}
+
+.cube .back {
+    background-color: var(--color2);
+    width: 200px;
+    height: 100px;
+    transform: rotateY(180deg) translateZ(200px);
+}
+
+.cube .right {
+    background-color: var(--color3);
+    width: 400px;
+    height: 100px;
+}
+
+.cube .left {
+    background-color: var(--color4);
+    width: 400px;
+    height: 100px;
+}
+
+.cube .top {
+    background-color: var(--color5);
+    width: 200px;
+    height: 400px;
+}
+
+.cube .bottom {
+    background-color: var(--color6);
+    width: 200px;
+    height: 400px;
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
