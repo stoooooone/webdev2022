@@ -1,0 +1,9 @@
+
+.gitignore
+
+.idea
+.obsidian
+.vs
+.spring-boot/
+c
+

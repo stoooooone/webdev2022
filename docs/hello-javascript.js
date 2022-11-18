@@ -59,3 +59,7 @@ if (true) {
 a();
 b();
 c();
+
+const div = document.createElement( 'div');
+div.innerHTML
+document.querySelector( 'wrapper').innerHTML = '<strong style="color:red">'

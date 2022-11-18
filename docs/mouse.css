@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --color1: #CCCCFF55;
+    --color2: #6495ED55;
+    --color3: #40E0D055;
+    --color4: #9FE2BF55;
+    --color5: #DE316355;
+    --color6: #FF7F5055;
+    --color7: #FFBF0055;
+}
+
+body {
+    /*font-family: href="https://fonts.googleapis.com/css?family=Roboto Mono";*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#circle {
+    width: 100px;
+    height: 100px;
+    background-color: var(--color1);
+    border-radius: 50%;
+    border: 10px solid var(--color6);
+    box-shadow: 10px 10px 10px var(--color5)
+        ,-10px -10px 10px var(--color7);
+
+    transition: all 10s cubic-bezier(.18,-0.68,.93,1.31);
+    animation: ani 5s linear infinite;
+
+}
+
+@keyframes ani {
+    100% {
+        transform: rotate(360deg);
+    }
+}
