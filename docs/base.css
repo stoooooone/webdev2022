@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary : #DDFFBC;
+    --secondary : #91C788;
+    --important : #52734D;
+    --normal : #FEFFDE;
+}
+
+div.wrapper {
+
+}
+
+div.wrapper div {
+    box-sizing: border-box;   /* width와 height를 정해도 패딩을 추가하면 커지지만 이 명령문으로 크기 고정 가능 */
+    padding : 10px 5px 20px 40px;   /* 시계방향 */
+    margin : 10px;      /* 마진은 영역이 겹쳐진다 */
+    width : 200px;
+    height : 200px;
+    border : 1px solid var(--important);
+    background : var(--normal);
+}
+
+div.wrapper div:first-child {
+    margin-bottom: 10px;
+    overflow : scroll;
+    z-index : 1;
+}
+
+div.wrapper div:last-child {
+    background: var(--primary);
+    z-index: 2;
+}
+
+span {
+    display : inline-block;
+    width : 100px;
+    height : 100px;
+    background : var(--primary);
+    border : 2px dashed var(--secondary);
+}
