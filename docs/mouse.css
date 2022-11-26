@@ -23,22 +23,28 @@ body {
     min-height: 100vh;
 }
 
-#circle {
+.ball {
     width: 100px;
     height: 100px;
     background-color: var(--color1);
     border-radius: 50%;
+    position: absolute;
     border: 10px solid var(--color6);
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
     box-shadow: 10px 10px 10px var(--color5)
         ,-10px -10px 10px var(--color7);
 
-    transition: all 10s cubic-bezier(.18,-0.68,.93,1.31);
+    transition-property: left, top;
+    transition: all 500ms cubic-bezier(.18,-0.68,.93,1.31);
     animation: ani 5s linear infinite;
 
 }
 
 @keyframes ani {
     100% {
-        transform: rotate(360deg);
+        transform: rotateZ(360deg);
     }
 }

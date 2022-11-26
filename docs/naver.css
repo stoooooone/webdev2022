@@ -46,7 +46,7 @@ body {
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
-#searchtext {
+#searchText {
     height: 52px;
     width: 500px;
     margin-bottom: 10px;
@@ -56,8 +56,9 @@ body {
 header {
     align-content: center;
     height: 120px;
-    #background: #19ce60;
-    border-bottom: 1px solid #e5e5e5;
+    /*#background: #19ce60;*/
+    /*border-bottom: 1px solid #e5e5e5;*/
+    width: 100%;
     margin: 10px 50px 10px 50px;
     padding: 10px 10px 50px 10px;
 }
@@ -98,22 +99,47 @@ ul {
 
 footer {
     border-top: #e5e5e5 1px solid;
-    float: bottom;
+    float: right;
     text-align: center;
     height: 50px;
+    width: 100%;
+    /*background-color: lightpink;*/
 }
 main {
     width: 75%;
     height: 500px;
     float: left;
+    /*background-color: salmon;*/
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
+
 aside {
-    width: 15%;
+    width: 25%;
     height: 500px;
     float: left;
+    border-top: 1px solid #e5e5e5;
 }
+
 #login {
     border: 1px solid #dae1e6;
     background: #f7f9fa;
     alignment: center;
+    color: gray;
+    font-size: 0.9em;
+    margin: 5px;
+    width: 90%;
 }
+
+.login {
+    background-color: var(--naver);
+    font-weight: bolder;
+    text-align: center;
+
+    height: 3.5em;
+}
+
+
+
+
+
