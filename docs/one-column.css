@@ -10,8 +10,12 @@
     --normal : #FEFFDE;
 }
 
-header, footer {
-    height : 50px;
+#wrapper {
+
+}
+
+header {
+    height : 150px;
     text-align: center;
     background: var(--primary);
 
@@ -21,7 +25,8 @@ main {
     float: left;
     width: 80%;
     height: 500px;
-    background: var(--important);
+    background: var(--normal);
+    text-align: justify;
 }
 
 aside {
@@ -32,3 +37,9 @@ aside {
 
 }
 
+footer {
+    height : 100px;
+    text-align: center;
+    background-color: var(--primary);
+    /*border-color: #202020 solid 2px;*/
+}

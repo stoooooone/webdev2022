@@ -135,12 +135,12 @@ aside {
     background: #f7f9fa;
     alignment: center;
     color: gray;
-    font-size: 0.9em;
+    font-size: 0.8em;
     width: 90%;
     height: 135px;
     margin-top: 20px;
     /*line-height: 135px;*/
-
+    padding: 20px;
 }
 
 .login {
@@ -148,10 +148,13 @@ aside {
     font-weight: bolder;
     text-align: center;
     justify-content: center;
-    height: 3.5em;
+    height: 50px;
     align-items: center;
     /*vertical-align: middle;*/
-    line-height: 3.5em;
+    line-height: 50px;
+    font-size: 10px;
+    margin-bottom: 2px;
+    /*border-color: var(--naver);*/
 }
 
 
