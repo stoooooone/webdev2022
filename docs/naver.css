@@ -24,7 +24,8 @@ body {
 #wrapper {
     mid-width: 1000px;
     align-content: center;
-
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 #head {
@@ -81,6 +82,8 @@ a {
     position: relative;
     /*display: block;*/
     font-weight: bold;
+    margin: 4px;
+    /*border-top: 1px solid #e5e5e5;*/
 }
 .nav_item {
     color: var(--naver);
@@ -106,7 +109,7 @@ footer {
     /*background-color: lightpink;*/
 }
 main {
-    width: 75%;
+    width: 70%;
     height: 500px;
     float: left;
     /*background-color: salmon;*/
@@ -114,11 +117,17 @@ main {
     border-bottom: 1px solid #e5e5e5;
 }
 
+.mainAd {
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
 aside {
-    width: 25%;
+    width: 30%;
     height: 500px;
     float: left;
     border-top: 1px solid #e5e5e5;
+    /*background-color: #91C788;*/
 }
 
 #login {
@@ -126,17 +135,26 @@ aside {
     background: #f7f9fa;
     alignment: center;
     color: gray;
-    font-size: 0.9em;
-    margin: 5px;
+    font-size: 0.8em;
     width: 90%;
+    height: 135px;
+    margin-top: 20px;
+    /*line-height: 135px;*/
+    padding: 20px;
 }
 
 .login {
     background-color: var(--naver);
     font-weight: bolder;
     text-align: center;
-
-    height: 3.5em;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    /*vertical-align: middle;*/
+    line-height: 50px;
+    font-size: 10px;
+    margin-bottom: 2px;
+    /*border-color: var(--naver);*/
 }
 
 
