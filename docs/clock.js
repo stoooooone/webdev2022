@@ -16,12 +16,12 @@
         const prefix = '0000000000000000';
         const news = prefix + s;
 
-        return news.substring(news.length - n);
+        return news.substring(news.length - n, news.length);
         // return s.toString().length > 2? '0' + s : s;
     }
 
     function clock() {
-        const d = new Date();   /*Date가 객체가 안되네..*/
+        let d = new Date(); /*Date가 객체가 안되네..*/
         const hours = d.getHours();
         const minutes = d.getMinutes();
         const seconds = d.getSeconds();

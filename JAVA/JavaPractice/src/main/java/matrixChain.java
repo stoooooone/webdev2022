@@ -1,4 +1,4 @@
-// Çà·Ä°ö¼À¼ø¼­ µ¿Àû ÇÁ·Î±×·¡¹Ö
+// ï¿½ï¿½Ä°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½
 import java.io.*;
 import java.util.Scanner;
 
@@ -30,9 +30,9 @@ public class matrixChain {
 			}
 		}
 		
-		System.out.print("µ¿Àû ÇÁ·Î±×·¡¹Ö : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ : ");
 		System.out.println(dp[1][N]);
-		System.out.printf("½ÇÇàÈ½¼ö : %d", dpnum);
+		System.out.printf("ï¿½ï¿½ï¿½ï¿½È½ï¿½ï¿½ : %d", dpnum);
 		
 		scanner.close();
 	}
