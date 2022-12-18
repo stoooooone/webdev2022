@@ -21,7 +21,7 @@ void loop() {
   if (GasValue >= GasThreshold) {   // 가스 농도가 임계치 이상의 값일 때
     digitalWrite(LED, HIGH);
     digitalWrite(buzzerPin, HIGH);
-    Serial.println("  Warning!!")
+    Serial.println("  Warning!!");
   }
   else {
     digitalWrite(LED, LOW);
